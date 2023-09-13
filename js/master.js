@@ -58,9 +58,11 @@ randomBgOptions.forEach((span) => {
     handelActiveState(e);
     if (e.target.dataset.background === "yes") {
       localStorage.setItem("random-background", true);
+      backgroundOption=true;
       randomizeBackground();
     } else {
       localStorage.setItem("random-background", false);
+      backgroundOption=false;
       clearInterval(backgroundIntervals);
     }
   });
@@ -186,6 +188,7 @@ document.addEventListener('click',(e)=>{
 })
 
 // End Toggle Button
+randomizeBackground();
 // Function area
 function randomizeBackground() {
   if (backgroundOption === true) {
