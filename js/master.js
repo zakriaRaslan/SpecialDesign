@@ -36,7 +36,7 @@ colorLi.forEach((li) => {
   });
 });
 // Random Background Option
-let backgroundOption = true;
+let backgroundOption = false;
 let backgroundIntervals;
 let backgroundOptLocalStorage = localStorage.getItem("random-background");
 
@@ -193,7 +193,7 @@ function randomizeBackground() {
       let randomNum = Math.floor(Math.random() * imgArray.length);
       pageLanding.style.backgroundImage =
         'url("imgs/Landing-imgs/' + imgArray[randomNum] + '")';
-    }, 2000);
+    }, 5000);
   }
 }
 randomizeBackground();

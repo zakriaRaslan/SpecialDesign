@@ -1,5 +1,5 @@
 :root{
-    --main-color:#001fc9;
+    --main-color:#18298bde;
 }
 *{
     box-sizing: border-box;
@@ -59,7 +59,7 @@ body{
     top: 80px;
     right: -30px;   
     width: 0;
-    background: #eee;
+    background: #FFF;
     padding: 0;
     width: 30px;
     padding: 8px 0;
@@ -67,15 +67,12 @@ body{
     cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
-.setting-box .toggle-settings.color-change{
-    background-color: var(--main-color);
-}
 .setting-box .options-box{
-    background: black;
+    background: #CCC;
     text-align: center;
     margin: 10px 10px 0;
     padding: 10px;
-    border-radius: 10px 0;
+    border-radius: 10px;
 }
 .setting-box .options-box h4{
     margin: 0;
@@ -90,18 +87,19 @@ body{
 .setting-box .options-box .color-list li{
     display: inline-block;
     width: 20px;
-    background-color: black;
+    background-color: #FFF;
     height: 20px;
     border-radius: 50%;
     margin: 0 2px;
     cursor: pointer;
-    border: 3px solid black;
+    border: 3px solid #FFF;
+    opacity: 0.5;
 }
 .setting-box .options-box .color-list li.active{
-    border-color:white ;
+    opacity: 1;
 }
 .setting-box .options-box .color-list li:first-child{
-    background-color: #001fc9;
+    background-color: #18298bde;
 }
 .setting-box .options-box .color-list li:nth-child(2){
     background-color: #a518bd;
@@ -183,7 +181,7 @@ display: none;
 /* End Navigation Bullets */
 
 .reset-options{
-    background-color: #ff2b2b;
+    background-color: #f51100;
     border: none;
     width: 176px;
     margin: 10px 10px;
