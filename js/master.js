@@ -193,7 +193,7 @@ function randomizeBackground() {
       let randomNum = Math.floor(Math.random() * imgArray.length);
       pageLanding.style.backgroundImage =
         'url("imgs/Landing-imgs/' + imgArray[randomNum] + '")';
-    }, 5000);
+    }, 10000);
   }
 }
 randomizeBackground();
